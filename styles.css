@@ -1,0 +1,234 @@
+  
+body,html{
+	width: 100%;
+	background-color: black;
+	color:white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+#bannerprincipal{
+  background:url(images/bosque1.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  margin-top: 0;
+}
+
+#menu li a{
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  
+}
+#menu ul{
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+}
+#menu li{
+  flex:1;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#lupa{
+	font-size: 15px;
+}
+.principal{
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  line-height: 5px;
+  width: 100%;
+  top: 35%;
+  
+}
+.principal h1{
+  font-size: 6vw;
+  
+}
+.principal p{
+  font-size: 3vw;
+}
+
+div.parrafo{
+	text-align: center;
+	position: relative;
+  width: 100%;
+}
+div.parrafo h3{
+	font-size: 4vw;
+}
+.parrafo p{
+  font-size: 2vw;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #4ddbff;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.descripcion {
+  padding: 15px;
+  text-align: center;
+}
+
+.cajagaleria {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallerybuttom{
+background-color:black;
+color:white;
+padding:16px 32px;
+text-align:center;
+display:block;
+text-decoration:none;
+border-radius:8px;
+margin:auto;
+font-size:16px;
+}
+
+.gallerybuttom:hover {
+
+background-image: linear-gradient(to bottom right, black, blue,#66ffff
+,#6600ff);	
+/*box-shadow: 0 3px 6px 6px  #ffccff,0 3px 6px 8px #d9e6f2;	*/
+animation-duration:4s;
+color:black;
+font-weight: bold;
+}
+#botongaleria{
+	font-size:17px;
+	font-weight: bold;
+}
+.parrafo2{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.parrafo2 h3{
+	font-size:50px;
+}
+.parrafo2 h3:hover{
+ 	  background: linear-gradient(green,white,red);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+.parrafo2 p{
+	font-size: 20px;
+}
+.cajainteres {
+  position: relative;
+  width: 50%;
+  padding:10px 20px;
+  float: left;
+}
+
+.imgfestival {
+  display: flex;
+  width: 100%;
+  height: auto;
+  
+}
+
+.cajafestival {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url(images/festival/fondo4.jpg) ;
+  overflow: hidden;
+  width: 99%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.cajainteres:hover .cajafestival {
+  bottom: 0;
+  height: 100%;
+}
+
+.textofestival {
+  white-space: nowrap; 
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+@media only screen and (max-width:1200px) and (min-width:300px){
+  .principal{
+    width: 100%;
+  }
+  .principal h1{
+   
+   width: 100%;
+  }
+
+}
+@media only screen and (max-width:600px){
+  .parrafo h3{
+    width:100% ;
+  }
+}
+@media only screen and (max-width:640px){
+  #menu ul{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #menu li{
+    flex-basis: 30%;
+    margin: 0;
+    padding:0;
+  }
+  
+}
+@media only screen and (max-width:1200px){
+  #menu li{
+    flex: 1;
+  }
+
+}
+@media only screen and (max-width: 700px) {
+  .cajagaleria {
+    width: 49.99999%;
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cajagaleria{
+    width: 100%;
+  }
+}
