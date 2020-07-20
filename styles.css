@@ -16,14 +16,24 @@ body,html{
   background-size: cover;
   height: 500px;
   position: relative;
-  margin-top: 0;
+  top:0;
 }
-
+#iconnav{
+  position: fixed;
+  top:0;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
 #menu li a{
   color: white;
   list-style-type: none;
   text-decoration: none;
-  
+  position: fixed;
+  top:0;
+  display: flex;
+  justify-content: center;
+  width: 20%;
 }
 #menu ul{
   display: flex;
