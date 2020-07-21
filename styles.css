@@ -17,6 +17,7 @@ body,html{
   height: 500px;
   position: relative;
   top:0;
+<<<<<<< HEAD
 }
 #iconnav{
   position: fixed;
@@ -27,14 +28,30 @@ body,html{
 }
 #menu li a{
   color: white;
+=======
+}
+
+#menu li a,#iconnav{
+  color:#d5dbe7;
+>>>>>>> gh-pages
   list-style-type: none;
+  position: fixed;
+  top:10px;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  text-shadow:0 0 #e5eaf0,0px 0px blue,3px 3px black,1px 1px #66069e,0 0 5px blue, 0 0 10px #99d6ff,0 0 15px #0048e0,0 0 25px #028291 ,0 0 35px #02a0ab;
+  font-weight: bold;
   text-decoration: none;
+<<<<<<< HEAD
   position: fixed;
   top:0;
   display: flex;
   justify-content: center;
   width: 20%;
   
+=======
+>>>>>>> gh-pages
 }
 #menu ul{
   display: flex;
